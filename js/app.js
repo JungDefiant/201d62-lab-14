@@ -4,7 +4,10 @@
 var Cart = function(items) {
     // this.items is an array of CartItem instances.
     this.items = items;
+
 };
+
+
 
 Cart.prototype.addItem = function(product, quantity) {
     var newCartItem = new CartItem(product, quantity);
@@ -18,8 +21,7 @@ Cart.prototype.saveToLocalStorage = function() {
 };
 
 Cart.prototype.removeItem = function(itemIndex) {
-    // TODO: Fill in this instance method to remove one item from the cart.
-    // Note: You will have to decide what kind of parameter to pass in here!
+
     this.itemIndex = itemIndex;
     var meowEvil = JSON.parse(localStorage.getItem(this.itemIndex));
     localStorage.clear(meowEvil);
