@@ -1,1 +1,11 @@
 /* TODO: Make it awesome */
+
+* {
+    outline: dotted 1px red;
+    overflow: hidden;
+}
+
+table {
+    height: 200px;
+    width: 200px;
+}
